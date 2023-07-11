@@ -15,10 +15,9 @@ export default function UserCard({ id, name, age, image }: Props) {
       />
 
       <div className={styles.cardContent}>
-        <h3>
-          <Link href={`/users/${id}`} />
-          {name}
-        </h3>
+        <Link href={`/users/${id}`}>
+          <h3>{name}</h3>
+        </Link>
         <p>Age: {age}</p>
       </div>
     </div>
